@@ -3,6 +3,9 @@ name: Deploy To GitHub Pages
 on:
   workflow_dispatch:
 
+permissions: 
+  pages: write
+
 jobs: 
   deploy: 
     runs-on: ubuntu-latest
