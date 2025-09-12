@@ -232,6 +232,16 @@
             margin-top: 0;
         }
 
+        @media (max-width: 768px) {
+        .resume-download {
+            position: static;
+            margin-top: 1.2rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+}
+
         .resume-btn {
             display: inline-flex;
             align-items: center;
