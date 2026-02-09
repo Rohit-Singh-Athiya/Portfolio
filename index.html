@@ -6,6 +6,7 @@
     <title>Rohit Singh Athiya - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/icons.css">
     <link rel="stylesheet" href="src/styles/main.css">
 </head>
 <body>
@@ -14,15 +15,15 @@
         <div class="container">
             <div class="header-content">
                 <h1 class="name">Rohit Singh Athiya</h1>
-                <p class="title-subtitle">SDET | 4+ Years Experience</p>
+                <p class="title-subtitle">Senior SDET | 4.5+ Years Experience</p>
                 <div class="contact-info">
                     <a href="tel:+918770267185" class="contact-item">
                         <i class="fas fa-phone"></i>
                         <span>+91-877 026 7185</span>
                     </a>
-                    <a href="mailto:rohitsathiya1000@gmail.com" class="contact-item">
+                    <a href="/cdn-cgi/l/email-protection#b8cad7d0d1cccbd9ccd0d1c1d989888888f8dfd5d9d1d496dbd7d5" class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>rohitsathiya1000@gmail.com</span>
+                        <span><span class="__cf_email__" data-cfemail="e1938e89889592809589889880d0d1d1d1a1868c80888dcf828e8c">rohitsathiya1000@gmail.com</span></span>
                     </a>
                     <a href="https://github.com/Rohit-Singh-Athiya" target="_blank" class="contact-item">
                         <i class="fab fa-github"></i>
@@ -34,7 +35,7 @@
                     </a>
                 </div>
                 <div class="resume-download">
-                  <a href="./data/Rohit_Singh_Athiya.pdf" download="Rohit_Singh_Athiya.pdf" class="resume-btn">
+                  <a href="/data/Rohit_Singh_Athiya_Resume.pdf" download="Rohit_Singh_Athiya_Resume.pdf" class="resume-btn">
                   <i class="fas fa-download"></i>
                         Download Resume
                   </a>
@@ -43,11 +44,24 @@
         </div>
     </header>
 
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Main Content -->
     <main class="main">
         <div class="container">
             <!-- About Section -->
-            <section class="section">
+            <section id="about" class="section">
                 <h2 class="section-title">About Me</h2>
                 <div class="about-container">
                     <!-- Profile Photo -->
@@ -68,7 +82,7 @@
             </section>
 
             <!-- Skills Table Section -->
-            <section class="section">
+            <section id="skills" class="section">
                 <h2 class="section-title">Technical Skills</h2>
                 <div class="skills-table-container">
                     <table class="skills-table">
@@ -81,31 +95,144 @@
                         <tbody>
                             <tr>
                                 <td>UI Automation Tools</td>
-                                <td>Playwright + Typescript/ JavaScript | Selenium + Java | Robot Framework </td>
+                                <td>
+                                    <div class="tech-items">
+                                        <span class="tech-item">
+                                        <img src="data\icons\pwimage.png" class="tech-icon-img" alt="Playwright">
+                                            Playwright
+                                        </span>
+                                        <span class="tech-item">
+                                            <i class="fab fa-js" style="color: #F7DF1E;"></i>
+                                            TypeScript / JavaScript
+                                        </span>
+                                        <span class="tech-item">
+                                            <i class="fas fa-globe" style="color: #43B02A;"></i>
+                                            Selenium
+                                        </span>
+                                        <span class="tech-item">
+                                            <i class="fab fa-java" style="color: #007396;"></i>
+                                            Java
+                                        </span>
+                                        <span class="tech-item">
+                                            <i class="fas fa-robot" style="color: #000000;"></i>
+                                            Robot Framework
+                                        </span>
+                                        <span class="tech-item">
+                                            <i class="fab fa-python" style="color: #3776AB;"></i>
+                                            Python
+                                        </span>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>API & Performance Testing</td>
-                                <td> Grafana K6, JMeter, Postman</td>
+                                <td>
+                                    <div class="tech-items">
+                                        <span class="tech-item">
+                                            <i class="fas fa-chart-line" style="color: #F46800;"></i>
+                                            Grafana K6
+                                        </span>
+                                        <span class="tech-item">
+                                            <i class="fas fa-bolt" style="color: #D22128;"></i>
+                                            JMeter
+                                        </span>
+                                        <span class="tech-item">
+                                            <i class="fas fa-rocket" style="color: #FF6C37;"></i>
+                                            Postman
+                                        </span>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Database</td>
-                                <td>SQL, MongoDB</td>
+                                <td>
+                                    <div class="tech-items">
+                                        <span class="tech-item">
+                                            <i class="fas fa-database" style="color: #4479A1;"></i>
+                                            SQL
+                                        </span>
+                                        <span class="tech-item">
+                                            <i class="fas fa-leaf" style="color: #47A248;"></i>
+                                            MongoDB
+                                        </span>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>DevOps & CI/CD</td>
-                                <td>Azure DevOps, GitHub Actions, Git</td>
+                                <td>
+                                    <div class="tech-items">
+                                        <span class="tech-item">
+                                            <i class="fab fa-microsoft" style="color: #0078D4;"></i>
+                                            Azure DevOps
+                                        </span>
+                                        <span class="tech-item">
+                                            <i class="fab fa-github" style="color: #181717;"></i>
+                                            GitHub Actions
+                                        </span>
+                                        <span class="tech-item">
+                                            <i class="fab fa-git-alt" style="color: #F05032;"></i>
+                                            Git
+                                        </span>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Monitoring & Messaging</td>
-                                <td>Splunk, RabbitMQ, Application Insights</td>
+                                <td>
+                                    <div class="tech-items">
+                                        <span class="tech-item">
+                                            <i class="fas fa-search" style="color: #000000;"></i>
+                                            Splunk
+                                        </span>
+                                        <span class="tech-item">
+                                            <img src="https://cdn.simpleicons.org/prometheus/E6522C" class="tech-icon-img" alt="Prometheus">
+                                            Prometheus
+                                        </span>
+                                        <span class="tech-item">
+                                            <i class="fas fa-envelope-open-text" style="color: #FF6600;"></i>
+                                            RabbitMQ
+                                        </span>
+                                        <span class="tech-item">
+                                            <i class="fas fa-chart-area" style="color: #0078D4;"></i>
+                                            Application Insights
+                                        </span>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Project Management & Reporting</td>
-                                <td>JIRA, Azure Boards, Microsoft Excel</td>
+                                <td>
+                                    <div class="tech-items">
+                                        <span class="tech-item">
+                                            <i class="fab fa-jira" style="color: #0052CC;"></i>
+                                            JIRA
+                                        </span>
+                                        <span class="tech-item">
+                                            <i class="fab fa-microsoft" style="color: #0078D4;"></i>
+                                            Azure Boards
+                                        </span>
+                                        <span class="tech-item">
+                                            <i class="fas fa-file-excel" style="color: #217346;"></i>
+                                            Microsoft Excel
+                                        </span>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <td>Methodologies</td>
-                                <td>Agile, Scrum</td>
+                                <td>
+                                    <div class="tech-items">
+                                        <span class="tech-item">
+                                            <i class="fas fa-sync-alt" style="color: #06b6d4;"></i>
+                                            Agile
+                                        </span>
+                                        <span class="tech-item">
+                                            <i class="fas fa-users" style="color: #8b5cf6;"></i>
+                                            Scrum
+                                        </span>
+                                    </div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
@@ -113,7 +240,7 @@
             </section>
             
             <!-- Experience Section -->
-            <section class="section">
+            <section id="experience" class="section">
                 <h2 class="section-title">Professional Experience</h2>
                 <div class="experience-timeline">
                     <div class="experience-item">
@@ -145,7 +272,7 @@ strategy across 3 key business modules.</li>
             </section>
 
             <!-- Projects Section -->
-            <section class="section">
+            <section id="projects" class="section">
                 <h2 class="section-title">Featured Projects</h2>
                 <div class="projects-grid">
                     <div class="project-card">
@@ -158,12 +285,39 @@ strategy across 3 key business modules.</li>
                             <span class="tech-tag">TypeScript</span>
                             <span class="tech-tag">GitHub Actions</span>
                         </div>
+                        <br>
+                        <br>
+                        <br>
                         <div class="project-buttons">
                             <a href="https://github.com/Rohit-Singh-Athiya/SwagLabsPlaywrightGitActions" target="_blank" class="project-link">
                                 <i class="fab fa-github"></i>
                                 View on GitHub
                             </a>
                             <a href="https://rohit-singh-athiya.github.io/SwagLabsPlaywrightGitActions/" target="_blank" class="project-link secondary">
+                                <i class="fas fa-chart-line"></i>
+                                View Dashboard
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="project-title">Performance Test + Monitoring</h3>
+                        <p class="project-description">
+                         A robust performance testing solution with real-time monitoring capabilities. It combines K6 for load testing with a complete observability stack for metrics collection and visualization.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Prometheus</span>
+                            <span class="tech-tag">K6</span>
+                            <span class="tech-tag">Grafana</span>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="project-buttons">
+                            <a href="https://github.com/Rohit-Singh-Athiya/k6-grafana" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                View on GitHub
+                            </a>
+                             <a href="https://github.com/Rohit-Singh-Athiya/k6-grafana" target="_blank" class="project-link secondary">
                                 <i class="fas fa-chart-line"></i>
                                 View Dashboard
                             </a>
@@ -179,7 +333,6 @@ strategy across 3 key business modules.</li>
                             <span class="tech-tag">API</span>
                             <span class="tech-tag">GitHub Actions</span>
                         </div>
-                        <br>
                         <br>
                         <div class="project-buttons">
                             <a href="https://github.com/Rohit-Singh-Athiya/API_AutomationPlaywright" target="_blank" class="project-link">
@@ -239,7 +392,7 @@ strategy across 3 key business modules.</li>
             </section>
 
             <!-- Certifications Section -->
-            <section class="section">
+            <section id="certifications" class="section">
                 <h2 class="section-title">Certifications & Achievements</h2>
                 <div class="certifications-grid">
                     <div class="certification-card">
@@ -297,9 +450,4 @@ strategy across 3 key business modules.</li>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p class="footer-text">© 2025 Rohit Singh Athiya. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+        <div cla
