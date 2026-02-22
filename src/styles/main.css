@@ -42,7 +42,7 @@
             position: relative;
             top: 0;
             z-index: 100;
-             animation: slideDown 0.8s ease-out;
+            animation: slideDown 0.8s ease-out;
         }
 
         .header-content {
@@ -50,6 +50,7 @@
             flex-direction: column;
             align-items: center;
             padding: 1rem 0;
+            position: relative;
         }
 
         .name {
@@ -103,6 +104,84 @@
             font-size: 1.1rem;
         }
 
+        .resume-download {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            margin-top: 0;
+        }
+
+        .resume-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: var(--gradient);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .resume-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(6, 182, 212, 0.4);
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            gap: 0.5rem;
+            padding: 0.75rem 0;
+            margin: 0;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 0.5rem 1.25rem;
+            border-radius: 0.5rem;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+            display: block;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color);
+            background: var(--hover-bg);
+            border-color: var(--primary-color);
+        }
+
+        .nav-link.active {
+            color: var(--primary-color);
+            border-color: var(--border-color);
+            background: var(--bg-card);
+        }
+
         /* Main Content */
         .main {
             padding: 4rem 0;
@@ -154,13 +233,12 @@
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            object-fit: cover;
             border: 4px solid transparent;
             background: var(--gradient);
             padding: 4px;
             animation: fadeIn 1s ease-out;
             transition: all 0.3s ease;
-            justify-self: center;
+            margin: 0 auto;
         }
 
         .profile-image:hover {
@@ -223,44 +301,6 @@
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
             border-color: transparent;
-        }
-
-        .resume-download {
-            position: absolute;
-            top: 2rem;
-            right: 2rem;
-            margin-top: 0;
-        }
-
-        @media (max-width: 768px) {
-        .resume-download {
-            position: static;
-            margin-top: 1.2rem;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
-}
-
-        .resume-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.8rem;
-            background: var(--gradient);
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 0.75rem;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-        }
-
-        .resume-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 12px 35px rgba(6, 182, 212, 0.4);
         }
 
         /* Skills Table Section */
@@ -401,20 +441,18 @@
 
         .experience-item {
             position: relative;
-            padding-left: 5rem;
             margin-bottom: 3rem;
             background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: 1rem;
-            padding: 2rem;
-            padding-left: 5rem;
+            padding: 2rem 2rem 2rem 5rem;
             transition: all 0.3s ease;
         }
 
         .experience-item::before {
             content: '';
             position: absolute;
-            left: -3rem;
+            left: 1.25rem;
             top: 2rem;
             width: 1rem;
             height: 1rem;
@@ -644,6 +682,12 @@
             font-weight: 500;
             border: 1px solid var(--border-color);
         }
+        .tech-icon-img {
+    width: 1.1rem;
+    height: 1.1rem;
+    object-fit: contain;
+    vertical-align: middle;
+}
 
         .project-buttons {
             display: flex;
@@ -734,7 +778,10 @@
             }
         }
 
-        /* Responsive Design */
+        /* =====================
+           RESPONSIVE DESIGN
+        ===================== */
+
         @media (max-width: 768px) {
             .container {
                 padding: 0 1rem;
@@ -752,6 +799,14 @@
                 padding: 0.5rem;
             }
 
+            .resume-download {
+                position: static;
+                margin-top: 1.2rem;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
             .section-title {
                 font-size: 1.5rem;
             }
@@ -762,7 +817,6 @@
             }
 
             .profile-image {
-                justify-self: center;
                 margin-bottom: 1rem;
             }
 
@@ -782,18 +836,17 @@
             }
 
             .experience-item {
-                padding-left: 3rem;
+                padding: 1.5rem 1.5rem 1.5rem 3rem;
             }
 
             .experience-item::before {
-                left: -2rem;
+                left: 0.5rem;
             }
 
             .stats-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            /* Skills Table Mobile */
             .skills-table-container {
                 overflow-x: auto;
             }
@@ -807,6 +860,15 @@
             .skills-table th:first-child {
                 width: 25%;
                 min-width: 120px;
+            }
+
+            .nav-menu {
+                gap: 0.25rem;
+            }
+
+            .nav-link {
+                font-size: 0.85rem;
+                padding: 0.4rem 0.75rem;
             }
         }
 
@@ -842,5 +904,10 @@
 
             .skills-table th:first-child {
                 width: 30%;
+            }
+
+            .nav-menu {
+                flex-wrap: wrap;
+                justify-content: center;
             }
         }
